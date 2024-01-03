@@ -33,7 +33,7 @@ public class App {
                      //   User.showOnline;
                         break;
                     case 0:
-                        System.out.println("Logging out! Bye "+user.name);
+                        System.out.println("Logging out! Bye "+user.getName());
                         user=null;
                 }
 

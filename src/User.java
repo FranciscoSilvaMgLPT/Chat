@@ -1,12 +1,16 @@
 public class User {
-    String name;
-    String password;
-    Boolean admin;
+    private String name;
+    private String password;
+    private Boolean admin;
 
     public User(String name, String password) {
         this.name = name;
         this.password = password;
-        this.admin = false;
+        if (name.charAt(0) == '#') {
+            this.admin = true;
+        } else {
+            this.admin = false;
+        }
     }
 
     public String getName() {
