@@ -13,7 +13,7 @@ public class Server {
     private static void start() {
         try {
             ServerSocket serverSocket = new ServerSocket(port);
-            System.out.println("Connected to server port:" + port);
+            System.out.println("Connected to server port: " + port);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

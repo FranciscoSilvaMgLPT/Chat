@@ -15,7 +15,7 @@ public class App {
                      user = userManager.login();
                      break;
                  case 2:
-                     user = userManager.signUp();
+                  //   user = userManager.signUp();
                      break;
                  case 0:
                      System.out.println("Goodbye!");
