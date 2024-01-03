@@ -6,7 +6,6 @@ public class App {
     Scanner sc = new Scanner(System.in);
     UserManager userManager=new UserManager();
 
-
     public void start(){
         do{
             if(user==null) {
@@ -16,7 +15,7 @@ public class App {
                      user = userManager.login();
                      break;
                  case 2:
-
+                     user = userManager.signUp();
                      break;
                  case 0:
                      System.out.println("Goodbye!");
@@ -28,7 +27,7 @@ public class App {
                 System.out.println("1- Chat\n2- Who is online?\n0- Log out");
                 switch (sc.nextInt()){
                     case 1:
-                     //    User.connect();
+                     //   User.connect();
                         break;
                     case 2:
                      //   User.showOnline;
@@ -37,7 +36,6 @@ public class App {
                         System.out.println("Logging out! Bye "+user.name);
                         user=null;
                 }
-
 
 
             }

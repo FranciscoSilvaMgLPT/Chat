@@ -1,10 +1,12 @@
 public class User {
     String name;
     String password;
+    Boolean admin;
 
     public User(String name, String password) {
         this.name = name;
         this.password = password;
+        this.admin = false;
     }
 
     public String getName() {
