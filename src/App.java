@@ -8,14 +8,15 @@ public class App {
 
     public void start(){
         do{
+
             if(user==null) {
-                System.out.println("1- Login\n2- Sign up\n0-Exit");
+                System.out.println("1- Login\n2- Sign up\n0- Exit");
              switch (option=sc.nextInt()){
                  case 1:
                      user = userManager.login();
                      break;
                  case 2:
-                  //   user = userManager.signUp();
+                     userManager.signUp();
                      break;
                  case 0:
                      System.out.println("Goodbye!");
@@ -24,13 +25,14 @@ public class App {
                      System.out.println("What?");
              }
             }else{
+
                 System.out.println("1- Chat\n2- Who is online?\n0- Log out");
                 switch (sc.nextInt()){
                     case 1:
-                     //   User.connect();
+                        userManager.enterChat(user);
                         break;
                     case 2:
-                     //   User.showOnline;
+                     //   .showOnline(user);
                         break;
                     case 0:
                         System.out.println("Logging out! Bye "+user.getName());
